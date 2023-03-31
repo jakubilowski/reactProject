@@ -64,12 +64,10 @@
   background-color: white;
 }
 
-.content { 
-  border:1px solid #000; 
+.content {  
   height:700px; 
   margin-left: 200px;
   margin-top: 20px;
-  padding:10px; 
 }
 
 .flex-container {

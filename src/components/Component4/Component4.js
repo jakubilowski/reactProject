@@ -4,7 +4,7 @@ import './Component4.css';
 function Component4(){
     return (
 
-        <li className="com-4-flex-item rounded">
+        <li className="com-4-flex-item">
           <p className='com-4-firstField'>Wykres</p>
           <div className='com-4-divForText'>
           <img class="com-4-picClass2" src="wykres.png"></img>

@@ -3,7 +3,7 @@ import './Component5.css';
 
 function Component5(){
     return (
-        <li className="com-5-flex-item rounded">
+        <li className="com-5-flex-item">
             <div className='com-5-parentDiv'>
             <span class="com-5-icon1">
             <i class="fa fa-paypal fa-2x com-5-iclass" aria-hidden="true"></i>
