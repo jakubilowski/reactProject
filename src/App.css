@@ -37,35 +37,36 @@
   }
 } */
 
-.myContainer { 
-  padding:10px; 
-  top:0px; 
-  right: 0; 
-  left: 0; 
-  height: 1200px; 
-  background-color: #e0e0eb
+.myContainer {
+  padding: 10px;
+  top: 0px;
+  right: 0;
+  left: 0;
+  height: 1200px;
+  background-color: #e0e0eb;
 }
 
 .sidebar {
-  position:fixed;
-  top:0; 
-  bottom:0; 
-  left:0;
-  width:200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
   height: 1000px;
   background: gray;
-  float:left;
+  float: left;
 }
 
-.header { 
-  height:60px; 
-  padding:10px; 
-  margin-left: 200px; 
+.header {
+  height: 60px;
+  padding: 10px;
+  margin-left: 200px;
   background-color: white;
+  border-radius: 10px;
 }
 
-.content {  
-  height:700px; 
+.content {
+  height: 700px;
   margin-left: 200px;
   margin-top: 20px;
 }
@@ -77,4 +78,3 @@
   margin: 0;
   list-style: none;
 }
-
