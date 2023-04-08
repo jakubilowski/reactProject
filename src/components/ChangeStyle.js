@@ -27,7 +27,7 @@ function ChangeStyle() {
   `;
 
   return (
-    <div>
+    <div className="fontDiv">
       <span>Zmień kolor: </span>
       <i onClick={handleClick} class="fa fa-moon-o" aria-hidden="true"></i>
       <style>{styles}</style>

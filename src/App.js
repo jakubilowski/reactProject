@@ -1,74 +1,32 @@
 import "./App.css";
-import logo from "./logo.svg";
+import About from "./components/pages/about";
+import Home from "./components/pages/home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./components/Sidebar/Sidebar";
 import Search from "./components/Search/Search";
-import Component1 from "./components/Component1/Component1";
-import Component2 from "./components/Component2/Component2";
-import Component3 from "./components/Component3/Component3";
-import Component4 from "./components/Component4/Component4";
-import Component5 from "./components/Component5/Component5";
-import ChangeStyle from "./components/ChangeStyle";
-import ChangeFontStyle from "./components/ChangeFontStyle";
+import Service from "./components/pages/service";
+import Products from "./components/pages/products";
+import Contact from "./components/pages/contact";
 
 function App() {
   return (
-    <div class="myContainer">
-      <div className="sidebar">
-        <SideBar />
+    <BrowserRouter>
+      <div class="myContainer">
+        <div className="sidebar">
+          <SideBar />
+        </div>
+        <div class="header">
+          <Search />
+        </div>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="products" element={<Products />} />
+          <Route path="service" element={<Service />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
       </div>
-      <div class="header">
-        <Search />
-      </div>
-      <div class="content">
-        <ul class="flex-container">
-          <Component1 />
-          <Component2 />
-          <Component3 />
-          <Component4 />
-          <div>
-            <Component5 />
-            <ChangeStyle />
-            <ChangeFontStyle />
-          </div>
-        </ul>
-      </div>
-    </div>
+    </BrowserRouter>
   );
 }
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-// import HelloWorld from './components/HelloWorld';
-// import ImieNazwisko from './components/ImieNazwisko/ImieNazwisko';
-// import NrAlbumu from './components/Album/NrAlbumu';
-// import NrGrupy from './components/Grupa/NrGrupy';
-// import Counter from './components/Counter/Counter';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <HelloWorld name = "Jakub"/>
-//       <ImieNazwisko surname = "Iłowski"/>
-//       <NrAlbumu nrAlbumu = "64258" />
-//       <NrGrupy nrGrupy = "1.1" />
-//       <Counter />
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edytujj <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

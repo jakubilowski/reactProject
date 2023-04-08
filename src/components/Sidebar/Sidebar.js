@@ -1,6 +1,9 @@
 import React from "react";
 import "./Sidebar.css";
 import NrAlbumu from "../Album/NrAlbumu";
+import { Link } from "react-router-dom";
+import ChangeFontStyle from "../ChangeFontStyle";
+import ChangeStyle from "../ChangeStyle";
 
 function SideBar() {
   return (
@@ -12,31 +15,33 @@ function SideBar() {
       </header>
       <ul>
         <li>
-          <a href="#">
+          <Link to="/">
             <i class="fa fa-home" aria-hidden="true"></i>Strona główna
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/products">
             <i class="fa fa-list" aria-hidden="true"></i>Produkty
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/about">
             <i class="fa fa-info-circle" aria-hidden="true"></i>O nas
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/service">
             <i class="fa fa-laptop" aria-hidden="true"></i>Serwis
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#">
+          <Link to="/contact">
             <i class="fa fa-phone-square" aria-hidden="true"></i>Kontakt
-          </a>
+          </Link>
         </li>
       </ul>
+      <ChangeStyle />
+      <ChangeFontStyle />
     </div>
   );
 }
